@@ -1,4 +1,4 @@
-# Gravity Forms IFrame Add-on
+# Gravity Forms Iframe Add-on
 
 Embed a Gravity Form inside an iframe on any site.
 
@@ -14,7 +14,7 @@ The typical process to embed a Gravity Form on a site where the plugin isn't ins
 3. Inserting the form shortcode in the new page.
 4. Manually writing an iframe tag with the page permalink and giving it a static height.
 
-With the Gravity Forms IFrame add-on, just enable a setting to allow the form to be embedded and copy the code snippet. That's it. As a bonus, the iframe automatically resizes whenever the form height changes -- for instance, when fields are shown or hidden due to conditional logic.
+With the Gravity Forms Iframe add-on, just enable a setting to allow the form to be embedded and copy the code snippet. That's it. As a bonus, the iframe automatically resizes whenever the form height changes -- for instance, when fields are shown or hidden due to conditional logic.
 
 ## Features
 
@@ -29,10 +29,10 @@ With the Gravity Forms IFrame add-on, just enable a setting to allow the form to
 
 The form title and description can be hidden independent of regular form display by toggling a checkbox after enabling embedding.
 
-![Form IFrame Settings Screenshot](https://raw.github.com/bradyvercher/gravity-forms-iframe/master/screenshot-1.png)
+![Form Iframe Settings Screenshot](https://raw.github.com/bradyvercher/gravity-forms-iframe/master/screenshot-1.png)
 _The form iframe settings panel._
 
-### Overrides for Individual IFrames
+### Overrides for Individual Iframes
 
 If the title and description settings need to be changed per embed, they can be modified in the iframe `src` query string.
 
