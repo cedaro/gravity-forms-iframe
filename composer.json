@@ -1,0 +1,22 @@
+{
+	"name": "bradyvercher/gravity-forms-iframe",
+	"description": "Embed a Gravity Form on any site using an iframe.",
+	"keywords": ["wordpress", "gravity forms", "iframe"]
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/bradyvercher/gravity-forms-iframe",
+	"license": "GPL-2.0+"
+	"authors": [
+		{
+			"name": "Brady Vercher",
+			"email": "brady@blazersix.com",
+			"homepage": "http://www.blazersix.com/"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/bradyvercher/gravity-forms-iframe/issues",
+		"source": "https://github.com/bradyvercher/gravity-forms-iframe"
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
