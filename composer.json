@@ -1,7 +1,7 @@
 {
 	"name": "bradyvercher/gravity-forms-iframe",
 	"description": "Embed a Gravity Form on any site using an iframe.",
-	"keywords": ["wordpress", "gravity forms", "iframe"]
+	"keywords": ["wordpress", "gravity forms", "iframe"],
 	"type": "wordpress-plugin",
 	"homepage": "https://github.com/bradyvercher/gravity-forms-iframe",
 	"license": "GPL-2.0+"
