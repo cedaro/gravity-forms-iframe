@@ -4,7 +4,7 @@
 	"keywords": ["wordpress", "gravity forms", "iframe"],
 	"type": "wordpress-plugin",
 	"homepage": "https://github.com/bradyvercher/gravity-forms-iframe",
-	"license": "GPL-2.0+"
+	"license": "GPL-2.0+",
 	"authors": [
 		{
 			"name": "Brady Vercher",
