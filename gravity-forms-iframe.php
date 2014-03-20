@@ -214,7 +214,7 @@ class GFIframe {
 	 * @since 1.0.0
 	 */
 	public function wp_footer() {
-		if ( ! is_gfiframe_template() ) {
+		if ( ! is_gfiframe_template() && ! apply_filters( 'gfiframe_print_resize_ping_script', false ) ) {
 			return;
 		}
 		?>
