@@ -83,14 +83,14 @@ class GFIframe_Addon extends GFAddOn {
 	}
 
 	/**
-	 * Declare the sections and fields for the Prevail add-on.
+	 * Declare the sections and fields for the iframe add-on.
 	 *
 	 * @access protected
 	 * @since 1.0.0
 	 *
 	 * @return array
 	 */
-	protected function form_settings_fields() {
+	protected function form_settings_fields( $form ) {
 		return array(
 			array(
 				'title'       => __( 'Iframe Settings', 'gravity-forms-iframe' ),
