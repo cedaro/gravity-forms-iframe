@@ -103,7 +103,7 @@ class GFIframe_Addon extends GFAddOn {
 						'tooltip' => '',
 						'choices' => array(
 							array(
-								'label' => __( 'Enable this form to be embedded in an iframe', 'gravity-forms-iframe' ),
+								'label' => __( 'Allow this form to be embedded in an iframe', 'gravity-forms-iframe' ),
 								'name'  => 'is_enabled',
 							),
 						),

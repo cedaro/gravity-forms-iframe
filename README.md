@@ -1,6 +1,6 @@
 # Gravity Forms Iframe Add-on
 
-Embed a Gravity Form inside an iframe on any site.
+Embed a Gravity Form in an iframe on any site.
 
 __Contributors:__ [Brady Vercher](https://github.com/bradyvercher)
 __Requires:__ 3.7
@@ -22,15 +22,15 @@ With the Gravity Forms Iframe add-on, just enable a setting to allow the form to
 * Auto-resizing iframes.
 * Override embed templates in a theme or child theme.
 * Override settings via the embed src query string.
-* Extends the Graviy Forms add-on API to seamless integrate with the WordPress and Gravity Forms interface.
+* Extends the Gravity Forms add-on API to seamlessly integrate with the WordPress and Gravity Forms interface.
 * Protocol-relative URLs for embedding on secure sites (both sites need SSL).
 
 ## Settings
 
-The form title and description can be hidden independent of regular form display by toggling a checkbox after enabling embedding.
+The form title and description can be hidden independent of regular form display by toggling a checkbox after enabling the embedding setting.
 
 ![Form Iframe Settings Screenshot](https://raw.github.com/bradyvercher/gravity-forms-iframe/master/screenshot-1.png)
-_The form iframe settings panel._
+_The form's iframe settings panel._
 
 ### Overrides for Individual Iframes
 
@@ -47,7 +47,7 @@ If the auto-resizing functionality isn't needed for a particular form, adjust th
 
 ## Template Hierarchy
 
-Templates can be defined in a theme or child theme to override the plugin's template using the following template names:
+Templates can be added in a theme or child theme to override the plugin's template. Use the following template names:
 
 * gravity-forms-iframe-{$form_id}.php
 * gravity-forms-iframe.php
@@ -66,7 +66,7 @@ Templates can be defined in a theme or child theme to override the plugin's temp
 1. Download the [latest release](https://github.com/bradyvercher/gravity-forms-iframe/archive/master.zip) from GitHub.
 2. Unzip the archive.
 3. Copy the folder to `/wp-content/plugins/`.
-4. Go to the __Plugins__ screen in your WordPress admin panel and click the __Activate__ link under GistPress.
+4. Go to the __Plugins__ screen in your WordPress admin panel and click the __Activate__ link under Gravity Forms Iframe.
 
 Read the Codex for more information about [installing plugins manually](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
@@ -76,7 +76,7 @@ Clone this repository in `/wp-content/plugins/`:
 
 `git clone git@github.com:bradyvercher/gravity-forms-iframe.git`
 
-Then go to the __Plugins__ screen in your WordPress admin panel and click the __Activate__ link under GistPress.
+Then go to the __Plugins__ screen in your WordPress admin panel and click the __Activate__ link under Gravity Forms Iframe.
 
 ## Updating ##
 
