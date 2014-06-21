@@ -139,7 +139,8 @@ class GFIframe {
 	 * @since 1.0.0
 	 */
 	public function init() {
-		add_rewrite_rule( '(gfembed.php)$', 'index.php?gfiframe=$matches[1]', 'top' );
+		// The PHP extension is deprecated.
+		add_rewrite_rule( '(gfembed(.php)?)/?$', 'index.php?gfiframe=$matches[1]', 'top' );
 	}
 
 	/**
@@ -163,7 +164,7 @@ class GFIframe {
 	public function template_redirect() {
 		global $wp;
 
-		if ( empty( $wp->query_vars['gfiframe'] ) || 'gfembed.php' != $wp->query_vars['gfiframe'] ) {
+		if ( empty( $wp->query_vars['gfiframe'] ) || ( 'gfembed' != $wp->query_vars['gfiframe'] && 'gfembed.php' != $wp->query_vars['gfiframe'] ) ) {
 			return;
 		}
 

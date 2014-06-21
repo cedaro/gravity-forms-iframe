@@ -161,7 +161,7 @@ class GFIframe_Addon extends GFAddOn {
 		$attributes[] = 'readonly="readonly"';
 		$attributes[] = 'onfocus="this.select();"';
 
-		$src = home_url( '/gfembed.php' );
+		$src = home_url( '/gfembed/' );
 		$src = add_query_arg( 'f', $form['id'], $src );
 		$src = preg_replace( '#^http(s)?:#', '', $src );
 
