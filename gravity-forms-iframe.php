@@ -183,6 +183,9 @@ class GFIframe {
 			wp_die( __( 'Embedding is disabled for this form.', 'gravity-forms-iframe' ) );
 		}
 
+		// Disable the toolbar in case the form is embedded on the same domain.
+		show_admin_bar( false );
+
 		require_once( GFCommon::get_base_path() . '/form_display.php' );
 
 		// Settings may be overridden in the query string. querystring -> form settings -> default
