@@ -19,7 +19,7 @@
  */
 function is_gfiframe_template() {
 	global $wp;
-	return isset( $wp->query_vars['gfiframe'] ) && 'gfembed.php' == $wp->query_vars['gfiframe'];
+	return isset( $wp->query_vars['gfiframe'] ) && ( 'gfembed' == $wp->query_vars['gfiframe']  || 'gfembed.php' == $wp->query_vars['gfiframe'] );
 }
 
 /**

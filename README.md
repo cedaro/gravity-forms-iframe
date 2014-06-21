@@ -2,9 +2,9 @@
 
 Embed a Gravity Form inside an iframe on any site.
 
-__Contributors:__ [Brady Vercher](https://github.com/bradyvercher)  
-__Requires:__ 3.7  
-__Tested up to:__ 3.8  
+__Contributors:__ [Brady Vercher](https://github.com/bradyvercher)
+__Requires:__ 3.7
+__Tested up to:__ 3.8
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 The typical process to embed a Gravity Form on a site where the plugin isn't installed requires:
@@ -39,7 +39,7 @@ If the title and description settings need to be changed per embed, they can be 
 * **`dt`:** Set to `1` to display the form title; `0` to hide.
 * **`dd`:** Set to `1` to display the form description; `0` to hide.
 
-_**Example:** gfembed.php?f=1&dt=0&dd=0_
+_**Example:** gfembed/?f=1&dt=0&dd=0_
 
 ### Auto-resizing Script
 

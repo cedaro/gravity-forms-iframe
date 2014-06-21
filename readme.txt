@@ -60,7 +60,7 @@ If the title and description settings need to be changed per embed, they can be 
 * **`dt`:** Set to `1` to display the form title; `0` to hide.
 * **`dd`:** Set to `1` to display the form description; `0` to hide.
 
-_**Example:** gfembed.php?f=1&dt=0&dd=0_
+_**Example:** gfembed/?f=1&dt=0&dd=0_
 
 #### Auto-resizing Script
 
