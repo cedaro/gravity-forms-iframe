@@ -2,7 +2,7 @@
 Contributors: blazersix, bradyvercher
 Tags: gravity forms, iframe, embed
 Requires at least: 3.7.1
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: trunk
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -74,6 +74,11 @@ Templates can be defined in a theme or child theme to override the plugin's temp
 * gravity-forms-iframe.php
 
 == Changelog ==
+
+= 1.0.1 =
+* Deprecated the .php extension in the embed rewrite rule to prevent conflicts with WordPress Multisite.
+* Disabled the WordPress toolbar in iframes when forms are embedded on the host domain.
+* Added a POT file for translators.
 
 = 1.0.0 =
 * Initial release.
