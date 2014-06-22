@@ -2,9 +2,9 @@
 
 Embed a Gravity Form in an iframe on any site.
 
-__Contributors:__ [Brady Vercher](https://github.com/bradyvercher)
-__Requires:__ 3.7
-__Tested up to:__ 3.9
+__Contributors:__ [Brady Vercher](https://github.com/bradyvercher)  
+__Requires:__ 3.7  
+__Tested up to:__ 3.9  
 __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 The typical process to embed a Gravity Form on a site where the plugin isn't installed requires:
