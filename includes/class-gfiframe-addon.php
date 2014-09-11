@@ -100,6 +100,7 @@ class GFIframe_Addon extends GFAddOn {
 						'label'   => __( 'Enable embedding', 'gravity-forms-iframe' ),
 						'type'    => 'checkbox',
 						'name'    => 'is_enabled',
+						'onclick' => '',
 						'tooltip' => '',
 						'choices' => array(
 							array(
@@ -112,6 +113,7 @@ class GFIframe_Addon extends GFAddOn {
 						'label'   => __( 'Display title', 'gravity-forms-iframe' ),
 						'type'    => 'checkbox',
 						'name'    => 'display_title',
+						'onclick' => '',
 						'tooltip' => '',
 						'choices' => array(
 							array(
@@ -125,6 +127,7 @@ class GFIframe_Addon extends GFAddOn {
 						'type'    => 'checkbox',
 						'name'    => 'display_description',
 						'tooltip' => '',
+						'onclick' => '',
 						'choices' => array(
 							array(
 								'label' => __( 'Display description', 'gravity-forms-iframe' ),
