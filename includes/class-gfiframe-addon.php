@@ -136,6 +136,12 @@ class GFIframe_Addon extends GFAddOn {
 						),
 					),
 					array(
+						'label' => __( 'Custom CSS', 'gravity-forms-iframe' ),
+					    'type'  => 'textarea',
+					    'name'  => 'custom_css',
+					    'tooltip' => 'This css will be added in the iFrame along with the form',
+					),
+					array(
 						'label'   => __( 'Embed Code', 'gravity-forms-iframe' ),
 						'type'    => 'gfiframe_embed_code',
 						'name'    => 'embed_code',

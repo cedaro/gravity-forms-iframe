@@ -198,9 +198,6 @@ class GFIframe {
 		$display_title       = (bool) $args['dt'];
 		$display_description = (bool) $args['dd'];
 
-		unset( $args );
-		unset( $settings );
-
 		// Templates can be customized in parent or child themes.
 		$templates = array(
 			'gravity-forms-iframe-' . $form_id . '.php',
