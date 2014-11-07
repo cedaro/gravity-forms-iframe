@@ -1,7 +1,7 @@
 ( function( window, undefined ) {
 	'use strict';
 
-	var bind, initIframeWatch,
+	var bind, watchIframe,
 		iframes = document.getElementsByTagName( 'iframe' );
 
 	bind = function( el, eventType, handler ) {
@@ -12,9 +12,10 @@
 		}
 	};
 
-	bind( window, 'message', function( e ) {
+	bind( window, 'message', function( e, x ) {
 		var data, iframe,
 			parts = e.data.split( ':' );
+			console.log( JSON.parse( e.data ) );
 
 		if ( 'size' === parts[0] ) {
 			data = parts[1].split( ',' );
@@ -27,7 +28,7 @@
 		}
 	} );
 
-	initIframeWatch = function( i ) {
+	watchIframe = function( i ) {
 		iframes[ i ].onload = iframes[ i ].onreadystatechange = function() {
 			if ( this.readyState && 'complete' !== this.readyState && 'loaded' !== this.readyState ) {
 				return;
@@ -46,7 +47,7 @@
 				continue;
 			}
 
-			initIframeWatch( i );
+			watchIframe( i );
 		}
 	}
 } )( this );

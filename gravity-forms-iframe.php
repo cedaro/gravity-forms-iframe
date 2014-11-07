@@ -230,9 +230,15 @@ class GFIframe {
 				if ( 0 === e.originalEvent.data.indexOf( 'size?' ) ) {
 					var index = e.originalEvent.data.replace( 'size?', '' ),
 						// size:index:width:height
-						message = 'size:' + index + ',' + document.body.scrollWidth + ',' + $document.height();
+						//message = 'size:' + index + ',' + document.body.scrollWidth + ',' + $document.height(),
+						message = {
+							id: 'size',
+							index: index,
+							height: $document.height(),
+							width: document.body.scrollWidth
+						};
 
-					e.originalEvent.source.postMessage( message, e.originalEvent.origin );
+					e.originalEvent.source.postMessage( JSON.stringify( message ), e.originalEvent.origin );
 				}
 			});
 		} )( this, jQuery );
