@@ -63,7 +63,7 @@ class GFIframe_Addon extends GFAddOn {
 	 *
 	 * @return array
 	 */
-	protected function scripts() {
+	public function scripts() {
 		$scripts = array(
 			array(
 				'handle'  => 'gfiframe-settings',
@@ -90,7 +90,7 @@ class GFIframe_Addon extends GFAddOn {
 	 *
 	 * @return array
 	 */
-	protected function form_settings_fields( $form ) {
+	public function form_settings_fields( $form ) {
 		return array(
 			array(
 				'title'       => __( 'Iframe Settings', 'gravity-forms-iframe' ),
