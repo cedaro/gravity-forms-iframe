@@ -9,6 +9,7 @@ body {
 	font-family: sans-serif;
 	font-size: 13px;
 }
+<?php echo ( ! empty( $settings['custom_css'] ) ) ? $settings['custom_css'] : '' ; ?>
 </style>
 </head>
 <body>
