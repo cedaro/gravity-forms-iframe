@@ -10,6 +10,7 @@ body {
 	font-size: 13px;
 }
 </style>
+<?php wp_head(); ?>
 </head>
 <body>
 <?php GFFormDisplay::print_form_scripts( $form_id, false ); // ajax = false ?>
