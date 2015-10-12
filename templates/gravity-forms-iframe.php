@@ -12,7 +12,7 @@ body {
 </style>
 </head>
 <body>
-<?php GFFormDisplay::print_form_scripts( $form_id, false ); // ajax = false ?>
+<?php GFFormDisplay::print_form_scripts( $form, false ); // ajax = false ?>
 <?php gravity_form( $form_id, $display_title, $display_description ); ?>
 <?php wp_footer(); ?>
 </body>
