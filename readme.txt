@@ -75,6 +75,10 @@ Templates can be defined in a theme or child theme to override the plugin's temp
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed a long-standing bug that may have prevented scripts from loading in the iframe template.
+* Fixed deprecated notices in Gravity Forms 1.9+.
+
 = 1.0.1 =
 * Deprecated the .php extension in the embed rewrite rule to prevent conflicts with WordPress Multisite.
 * Disabled the WordPress toolbar in iframes when forms are embedded on the host domain.
