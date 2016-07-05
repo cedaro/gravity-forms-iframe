@@ -22,6 +22,22 @@
  */
 class GFIframe_Addon extends GFAddOn {
 	/**
+	 * Members plugin integration.
+	 *
+	 * @since 1.0.3
+	 * @var array
+	 */
+	protected $_capabilities = array( 'gravityforms_iframe' );
+
+	/**
+	 * Form settings capability.
+	 *
+	 * @since 1.0.3
+	 * @var string
+	 */
+	protected $_capabilities_form_settings = 'gravityforms_iframe';
+
+	/**
 	 * Class constructor for setting up the add-on.
 	 *
 	 * @access private
@@ -147,16 +163,16 @@ class GFIframe_Addon extends GFAddOn {
 		);
 	}
 
-    /**
-     * Render a field for displaying the code to embed a form.
+	/**
+	 * Render a field for displaying the code to embed a form.
 	 *
 	 * @since 1.0.0
-     *
-     * @param array $field Field array containing the configuration options of this field.
-     * @param bool $echo Whether the field should be displayed.
-     * @return string
-     */
-    protected function settings_gfiframe_embed_code( $field, $echo = true ) {
+	 *
+	 * @param array $field Field array containing the configuration options of this field.
+	 * @param bool $echo Whether the field should be displayed.
+	 * @return string
+	 */
+	protected function settings_gfiframe_embed_code( $field, $echo = true ) {
 		$form = $this->get_current_form();
 
 		$field['type'] = 'gfiframe_embed_code';
@@ -182,5 +198,5 @@ class GFIframe_Addon extends GFAddOn {
 		}
 
 		return $html;
-    }
+	}
 }
