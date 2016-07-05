@@ -47,7 +47,7 @@ class GFIframe_Addon extends GFAddOn {
 	public function __construct() {
 		$this->_title       = __( 'Gravity Forms Iframe Add-On', 'gravity-forms-iframe' );
 		$this->_short_title = __( 'Iframe', 'gravity-forms-iframe' );
-		$this->_version     = '1.0.0';
+		$this->_version     = '1.0.3';
 		$this->_slug        = 'gfiframe';
 		$this->_path        = 'gravity-forms-iframe/gravity-forms-iframe.php';
 		$this->_full_path   = dirname( dirname( __FILE__ ) ) . '/gravity-forms-iframe.php';

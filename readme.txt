@@ -75,6 +75,9 @@ Templates can be defined in a theme or child theme to override the plugin's temp
 
 == Changelog ==
 
+= 1.0.3 =
+* Defined 'gravityforms_iframe' capability in the Add-on class to integrate with the Members plugin.
+
 = 1.0.2 =
 * Fixed a long-standing bug that may have prevented scripts from loading in the iframe template.
 * Fixed deprecated notices in Gravity Forms 1.9+.

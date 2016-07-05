@@ -12,7 +12,7 @@
  * Plugin Name: Gravity Forms Iframe Add-On
  * Plugin URI: https://github.com/bradyvercher/gravity-forms-iframe
  * Description: Easily embed Gravity Forms in an auto-resizing iframe on external sites.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Blazer Six, Inc.
  * Author URI: http://www.blazersix.com/
  * License: GPL-2.0+

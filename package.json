@@ -1,6 +1,6 @@
 {
   "name": "gravity-forms-iframe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A WordPress plugin to allow embedding Gravity Forms in auto-resizing iframes on external sites.",
   "main": "Gruntfile.js",
   "devDependencies": {
