@@ -187,7 +187,7 @@ class GFIframe_Addon extends GFAddOn {
 		// Relative protocol.
 		$plugin_uri = preg_replace( '#^http(s)?:#', '', GFIFRAME_URI );
 
-		$value  = '<iframe src="' . esc_url( $src ) . '" width="100%" height="500" frameBorder="0" class="gfiframe"></iframe>' . "\n";
+		$value  = '<iframe src="' . esc_url( $src ) . '" width="100%" height="500" frameBorder="0" class="gfiframe" id="gfiframe_'.$form['id'].'"></iframe>' . "\n";
 		$value .= '<script src="' . esc_url( $plugin_uri . 'assets/scripts/gfembed.min.js' ) . '" type="text/javascript"></script>';
 		$tooltip =  isset( $choice['tooltip'] ) ? gform_tooltip( $choice['tooltip'], rgar( $choice, 'tooltip_class'), true ) : '';
 
