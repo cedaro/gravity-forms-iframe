@@ -70,7 +70,7 @@ $gfiframe = gfiframe()
 	->register_hooks( new GravityFormsIframe_Provider_I18n() );
 
 /**
- *
+ * Include helper functions and backward compatibility files.
  */
 include( $gfiframe->get_path( 'includes/deprecated.php' ) );
 include( $gfiframe->get_path( 'includes/functions.php' ) );

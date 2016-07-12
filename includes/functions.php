@@ -34,8 +34,8 @@ function is_gfiframe_template() {
  * @see locate_template()
  *
  * @param string|array $template_names Template file(s) to search for, in order.
- * @param bool $load If true the template file will be loaded if it is found.
- * @param bool $require_once Whether to require_once or require. Default true. Has no effect if $load is false.
+ * @param bool         $load           If true the template file will be loaded if it is found.
+ * @param bool         $require_once   Whether to require_once or require. Default true. Has no effect if $load is false.
  * @return string The template path if one is located.
  */
 function gfiframe_locate_template( $template_names, $load = false, $require_once = true ) {
