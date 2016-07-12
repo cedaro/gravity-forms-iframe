@@ -10,6 +10,7 @@ body {
 	font-size: 13px;
 }
 </style>
+<?php do_action( 'gfiframe_head', $form_id, $form ); ?>
 </head>
 <body>
 <?php GFFormDisplay::print_form_scripts( $form, false ); // ajax = false ?>
