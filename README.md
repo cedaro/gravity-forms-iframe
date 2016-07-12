@@ -50,16 +50,16 @@ Templates can be added in a theme or child theme to override the plugin's templa
 * gravity-forms-iframe-{$form_id}.php
 * gravity-forms-iframe.php
 
-## Installation ##
+## Installation
 
-### Upload ###
+### Upload
 
 1. Download the [latest release](https://github.com/bradyvercher/gravity-forms-iframe/archive/master.zip) from GitHub.
 2. Go to the __Plugins &rarr; Add New__ screen in your WordPress admin panel and click the __Upload__ tab at the top.
 3. Upload the zipped archive.
 4. Click the __Activate Plugin__ link after installation completes.
 
-### Manual ###
+### Manual
 
 1. Download the [latest release](https://github.com/bradyvercher/gravity-forms-iframe/archive/master.zip) from GitHub.
 2. Unzip the archive.
@@ -68,7 +68,7 @@ Templates can be added in a theme or child theme to override the plugin's templa
 
 Read the Codex for more information about [installing plugins manually](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
-### Git ###
+### Git
 
 Clone this repository in `/wp-content/plugins/`:
 
@@ -76,6 +76,29 @@ Clone this repository in `/wp-content/plugins/`:
 
 Then go to the __Plugins__ screen in your WordPress admin panel and click the __Activate__ link under _Gravity Forms Iframe_.
 
-## Updating ##
+## Changelog
 
-* [GitHub Updater](https://github.com/afragen/github-updater)
+### 2.0.0
+
+* Moved to the Cedaro GitHub account.
+* Refactored the plugin structure.
+* Introduced a 'gfiframe_head' action in the template header.
+
+### 1.0.3
+
+* Defined 'gravityforms_iframe' capability in the Add-on class to integrate with the Members plugin.
+
+### 1.0.2
+
+* Fixed a long-standing bug that may have prevented scripts from loading in the iframe template.
+* Fixed deprecated notices in Gravity Forms 1.9+.
+
+### 1.0.1
+
+* Deprecated the .php extension in the embed rewrite rule to prevent conflicts with WordPress Multisite.
+* Disabled the WordPress toolbar in iframes when forms are embedded on the host domain.
+* Added a POT file for translators.
+
+### 1.0.0
+
+* Initial release.
