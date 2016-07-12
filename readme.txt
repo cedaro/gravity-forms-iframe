@@ -64,7 +64,7 @@ _**Example:** gfembed/?f=1&dt=0&dd=0_
 
 #### Auto-resizing Script
 
-If the auto-resizing functionality isn't needed for a particular form, adjust the iframe's height attribute to accomodate the form and don't include the `<script>` tag when copying the embed code. Leaving off the script tag will save an HTTP request.
+If the auto-resizing functionality isn't needed for a particular form, adjust the iframe's height attribute to accommodate the form and don't include the `<script>` tag when copying the embed code. Leaving off the script tag will save an HTTP request.
 
 ### Template Hierarchy
 

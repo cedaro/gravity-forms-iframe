@@ -4,9 +4,10 @@
  *
  * @since 1.0.0
  *
- * @package GFIframe
- * @author Brady Vercher <brady@blazersix.com>
- * @license GPL-2.0+
+ * @package   GravityFormsIframe
+ * @copyright Copyright (c) 2016, Cedaro, LLC
+ * @license   GPL-2.0+
+ * @since     1.0.0
  */
 
 /**
@@ -51,8 +52,8 @@ function gfiframe_locate_template( $template_names, $load = false, $require_once
 		} elseif ( file_exists( get_template_directory() . '/' . $template_name ) ) {
 			$template = get_template_directory() . '/' . $template_name;
 			break;
-		} elseif ( file_exists( GFIFRAME_DIR . 'templates/' . $template_name ) ) {
-			$template = GFIFRAME_DIR . 'templates/' . $template_name;
+		} elseif ( file_exists( gfiframe()->get_path( 'templates/' . $template_name ) ) ) {
+			$template = gfiframe()->get_path( 'templates/' . $template_name );
 			break;
 		}
 	}
