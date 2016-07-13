@@ -95,9 +95,10 @@ class GravityFormsIframe_Addon extends GFAddOn {
 	 *
 	 * @since 2.0.0
 	 *
+	 * @param array $form Form data.
 	 * @return array
 	 */
-	public function form_settings_fields() {
+	public function form_settings_fields( $form ) {
 		return array(
 			array(
 				'title'       => esc_html__( 'Iframe Settings', 'gravity-forms-iframe' ),
