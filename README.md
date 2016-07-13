@@ -78,6 +78,10 @@ Then go to the __Plugins__ screen in your WordPress admin panel and click the __
 
 ## Changelog
 
+### 2.0.1
+
+* Make GravityFormsIframe_Addon::form_settings_fields() compatible with the parent class.
+
 ### 2.0.0
 
 * Moved to the Cedaro GitHub account.
