@@ -7,16 +7,17 @@
  * @license   GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: Gravity Forms Iframe Add-on
- * Plugin URI:  https://github.com/cedaro/gravity-forms-iframe
- * Description: Easily embed Gravity Forms in an auto-resizing iframe on external sites.
- * Version:     2.0.1
- * Author:      Cedaro
- * Author URI:  http://www.cedaro.com/
- * License:     GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: gravity-forms-iframe
- * Domain Path: /languages
+ * Plugin Name:       Gravity Forms Iframe Add-on
+ * Plugin URI:        https://github.com/cedaro/gravity-forms-iframe
+ * Description:       Easily embed Gravity Forms in an auto-resizing iframe on external sites.
+ * Version:           2.0.1
+ * Author:            Cedaro
+ * Author URI:        http://www.cedaro.com/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       gravity-forms-iframe
+ * Domain Path:       /languages
+ * GitHub Plugin URI: https://github.com/cedaro/gravity-forms-iframe
  */
 
 /**
