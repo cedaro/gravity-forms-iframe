@@ -1,33 +1,22 @@
 ( function( window, undefined ) {
 	'use strict';
 
-	var bind, initIframeWatch,
-		iframes = document.getElementsByTagName( 'iframe' );
+	var iframes = document.getElementsByTagName( 'iframe' );
 
-	bind = function( el, eventType, handler ) {
-		if ( el.addEventListener ) {
-			el.addEventListener( eventType, handler, false );
-		} else if ( el.attachEvent ) {
-			el.attachEvent( 'on' + eventType, handler );
-		}
-	};
+	window.addEventListener( 'message', function( e ) {
+		var iframe;
 
-	bind( window, 'message', function( e ) {
-		var data, iframe,
-			parts = e.data.split( ':' );
+		if ( 'size' === e.data.message ) {
+			iframe = iframes[ e.data.index ];
 
-		if ( 'size' === parts[0] ) {
-			data = parts[1].split( ',' );
-
-			iframe = iframes[ data[0] ];
 			if ( 'undefined' !== typeof iframe ) {
-				iframe.height = data[2];
+				iframe.height = parseInt( e.data.height, 10 );
 				iframe.scrolling = 'no';
 			}
 		}
 	} );
 
-	initIframeWatch = function( i ) {
+	function watchIframe( i ) {
 		iframes[ i ].onload = iframes[ i ].onreadystatechange = function() {
 			if ( this.readyState && 'complete' !== this.readyState && 'loaded' !== this.readyState ) {
 				return;
@@ -35,7 +24,10 @@
 
 			setInterval( function() {
 				// Send a message to the iframe to ask it to return its size.
-				iframes[ i ].contentWindow.postMessage( 'size?' + i, '*' );
+				iframes[ i ].contentWindow.postMessage({
+					message: 'size',
+					index: i
+				}, '*' );
 			}, 500 );
 		};
 	};
@@ -46,7 +38,7 @@
 				continue;
 			}
 
-			initIframeWatch( i );
+			watchIframe( i );
 		}
 	}
 } )( this );

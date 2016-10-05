@@ -125,20 +125,25 @@ class GravityFormsIframe_Plugin extends GravityFormsIframe_AbstractPlugin {
 			return;
 		}
 		?>
-		<script type="text/javascript">
-		( function( window, $, undefined ) {
-			var $document = $( document );
-
-			$( window ).on( 'message', function( e ) {
-				if ( 0 === e.originalEvent.data.indexOf( 'size?' ) ) {
-					var index = e.originalEvent.data.replace( 'size?', '' ),
-						// size:index:width:height
-						message = 'size:' + index + ',' + document.body.scrollWidth + ',' + $document.height();
-
-					e.originalEvent.source.postMessage( message, e.originalEvent.origin );
+		<script>
+		(function( window, undefined ) {
+			window.addEventListener( 'message', function( e ) {
+				if ( 'size' === e.data.message ) {
+					e.source.postMessage({
+						message: 'size',
+						// @link https://stackoverflow.com/a/1147768
+						height: getBodyHeight(),
+						index: e.data.index,
+						width: document.body.scrollWidth
+					}, e.origin );
 				}
 			});
-		} )( this, jQuery );
+
+			function getBodyHeight() {
+				var styles = getComputedStyle( document.body );
+				return parseInt( styles.height, 10 ) + parseInt( styles.marginTop, 10 ) + parseInt( styles.marginBottom );
+			}
+		})( this );
 		</script>
 		<?php
 
