@@ -87,7 +87,7 @@ class GravityFormsIframe_Plugin extends GravityFormsIframe_AbstractPlugin {
 		}
 
 		// Disable the toolbar in case the form is embedded on the same domain.
-		show_admin_bar( false );
+		add_filter( 'show_admin_bar', '__return_false', 100 );
 
 		require_once( GFCommon::get_base_path() . '/form_display.php' );
 
