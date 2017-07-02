@@ -181,6 +181,7 @@ class GravityFormsIframe_Addon extends GFAddOn {
 		$script_url = preg_replace( '#^http(s)?:#', '', $this->plugin->get_url( 'assets/scripts/gfembed.min.js' ) );
 
 		$value  = '<iframe src="' . esc_url( $iframe_url ) . '" width="100%" height="500" frameBorder="0" class="gfiframe"></iframe>' . "\n";
+		$value .= '<script type="text/javascript">document.getElementsByClassName("gfiframe").scrolling = "no"</script>';
 		$value .= '<script src="' . esc_url( $script_url ) . '" type="text/javascript"></script>';
 
 		$tooltip = '';
