@@ -83,9 +83,16 @@ Then go to the __Plugins__ screen in your WordPress admin panel and click the __
 
 ## Changelog
 
+### 2.0.2
+
+* Updated embed code field in the admin panel to work with Gravity Forms 2.5+.
+* Passed an object instead of a string in the auto-resize message.
+* Changed the method for hiding the admin bar to improve reliability.
+* Added GitHub Update compatibility.
+
 ### 2.0.1
 
-* Make GravityFormsIframe_Addon::form_settings_fields() compatible with the parent class.
+* Made GravityFormsIframe_Addon::form_settings_fields() compatible with the parent class.
 
 ### 2.0.0
 

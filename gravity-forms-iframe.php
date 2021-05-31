@@ -10,7 +10,7 @@
  * Plugin Name:       Gravity Forms Iframe Add-on
  * Plugin URI:        https://github.com/cedaro/gravity-forms-iframe
  * Description:       Easily embed Gravity Forms in an auto-resizing iframe on external sites.
- * Version:           2.0.1
+ * Version:           2.0.2
  * Author:            Cedaro
  * Author URI:        http://www.cedaro.com/
  * License:           GPL-2.0+
