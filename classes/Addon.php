@@ -164,7 +164,7 @@ class GravityFormsIframe_Addon extends GFAddOn {
 	 * @param bool  $echo  Whether the field should be displayed.
 	 * @return string
 	 */
-	protected function settings_iframe_embed_code( $field, $echo = true ) {
+	public function settings_iframe_embed_code( $field, $echo = true ) {
 		$form = $this->get_current_form();
 
 		$field['type'] = 'iframe_embed_code';
@@ -172,6 +172,7 @@ class GravityFormsIframe_Addon extends GFAddOn {
 		$attributes   = $this->get_field_attributes( $field );
 		$attributes[] = 'readonly="readonly"';
 		$attributes[] = 'onfocus="this.select();"';
+		$attributes[] = 'style="cursor: auto; pointer-events: auto"';
 
 		$iframe_url = home_url( '/gfembed/' );
 		$iframe_url = add_query_arg( 'f', $form['id'], $iframe_url );
