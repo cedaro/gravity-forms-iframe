@@ -36,6 +36,7 @@ class GravityFormsIframe_Plugin extends GravityFormsIframe_AbstractPlugin {
 		add_action( 'init',              array( $this, 'register_rewrite_rules' ) );
 		add_filter( 'query_vars',        array( $this, 'query_vars' ) );
 		add_action( 'template_redirect', array( $this, 'template_redirect' ) );
+		add_action( 'gfiframe_head',     array( $this, 'handle_config_collection' ) );
 		add_action( 'wp_footer',         array( $this, 'wp_footer' ) );
 
 		// Load the Gravity Forms add-on framework and iframe add-on.
@@ -121,6 +122,24 @@ class GravityFormsIframe_Plugin extends GravityFormsIframe_AbstractPlugin {
 		$template = gfiframe_locate_template( $templates );
 		include( $template );
 		exit;
+	}
+
+	/**
+	 * Handle config collection.
+	 *
+	 * This is usually called in wp_enqueue_scripts, but because the iframe
+	 * template doesn't call wp_head(), some Gravity Forms scripts aren't
+	 * localized, which causes JavaScript errors.
+	 *
+	 * @see Gravity_Forms\Gravity_Forms\Config\GF_Config_Service_Provider
+	 *
+	 * @since 2.0.3
+	 */
+	public function handle_config_collection() {
+		$container         = GFForms::get_service_container();
+		$config_collection = Gravity_Forms\Gravity_Forms\Config\GF_Config_Service_Provider::CONFIG_COLLECTION;
+
+		$container->get( $config_collection )->handle();
 	}
 
 	/**
