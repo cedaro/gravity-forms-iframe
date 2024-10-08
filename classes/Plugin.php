@@ -16,6 +16,14 @@
  */
 class GravityFormsIframe_Plugin extends GravityFormsIframe_AbstractPlugin {
 	/**
+	 * Gravity Forms addon instance.
+	 *
+	 * @since 2.0.3
+	 * @var GFAddOn
+	 */
+	protected $addon;
+
+	/**
 	 * Load the plugin.
 	 *
 	 * @since 2.0.0
