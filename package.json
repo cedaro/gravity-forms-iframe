@@ -1,6 +1,6 @@
 {
   "name": "gravity-forms-iframe",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A WordPress plugin to allow embedding Gravity Forms in auto-resizing iframes on external sites.",
   "license": "GPL-2.0+",
   "repository": "cedaro/gravity-forms-iframe",
@@ -13,6 +13,6 @@
   "devDependencies": {
     "jshint": "^2.9.2",
     "node-wp-i18n": "github:cedaro/node-wp-i18n#develop",
-    "uglify-js": "^2.7.0"
+    "uglify-js": "^3.19.3"
   }
 }

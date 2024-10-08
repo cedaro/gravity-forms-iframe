@@ -30,7 +30,7 @@
 				}, '*' );
 			}, 500 );
 		};
-	};
+	}
 
 	if ( iframes.length ) {
 		for ( var i = 0; i < iframes.length; i ++ ) {

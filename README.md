@@ -83,6 +83,11 @@ Then go to the __Plugins__ screen in your WordPress admin panel and click the __
 
 ## Changelog
 
+### 2.0.3
+
+* Declared a variable in the `Plugin` class to prevent dynamic proprety warnings in PHP 8.2+.
+* Handled Gravity Forms config collections in the head section of the iframe template. This allows scripts to be "localized" and prevents JavaScript errors.
+
 ### 2.0.2
 
 * Updated embed code field in the admin panel to work with Gravity Forms 2.5+.
