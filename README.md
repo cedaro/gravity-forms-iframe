@@ -83,6 +83,10 @@ Then go to the __Plugins__ screen in your WordPress admin panel and click the __
 
 ## Changelog
 
+### 2.0.4
+
+* Required composer/installers 1.0 or 2.0 to prevent conflicts when installed with Composer.
+
 ### 2.0.3
 
 * Declared a variable in the `Plugin` class to prevent dynamic proprety warnings in PHP 8.2+.

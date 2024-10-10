@@ -56,7 +56,7 @@ class GravityFormsIframe_Addon extends GFAddOn {
 
 		$this->_title       = esc_html__( 'Gravity Forms Iframe Add-On', 'gravity-forms-iframe' );
 		$this->_short_title = esc_html__( 'Iframe', 'gravity-forms-iframe' );
-		$this->_version     = '2.0.3';
+		$this->_version     = '2.0.4';
 		$this->_slug        = 'gfiframe';
 		$this->_path        = $this->plugin->get_basename();
 		$this->_full_path   = $this->plugin->get_file();
