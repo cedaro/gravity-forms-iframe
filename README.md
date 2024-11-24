@@ -83,6 +83,10 @@ Then go to the __Plugins__ screen in your WordPress admin panel and click the __
 
 ## Changelog
 
+### 2.0.5
+
+* Loaded the text domain on `init` rather than `plugins_loaded` to prevent notices in WordPress 6.7+.
+
 ### 2.0.4
 
 * Required composer/installers 1.0 or 2.0 to prevent conflicts when installed with Composer.
