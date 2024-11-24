@@ -23,10 +23,10 @@ class GravityFormsIframe_Provider_I18n extends GravityFormsIframe_AbstractProvid
 	 * @since 2.0.0
 	 */
 	public function register_hooks() {
-		if ( did_action( 'plugins_loaded' ) ) {
+		if ( did_action( 'init' ) ) {
 			$this->load_textdomain();
 		} else {
-			add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+			add_action( 'init', array( $this, 'load_textdomain' ) );
 		}
 	}
 
